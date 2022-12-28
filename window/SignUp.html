@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style13.css">
+    <title>SIGN UP NOW</title>
+  </head>
+  <body style="user-select: none; user-zoom: none;">
+    <div class="container">
+      <div class="wrapper">
+        <div class="content">
+          <div class="form_box">
+            <form>
+              <h3 class="text-uppercase text-centter" style="color: orange;">
+                registration form
+              </h3>
+              <div class="form-group">
+                <label for="">username</label>
+                <span class="name_error badge badge-danger"></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="first_name"
+                  aria-describedby="helpId"
+                  placeholder="Please Enter Your username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">E-mail</label>
+                <span class="email_error badge badge-danger"></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  aria-describedby="helpId"
+                  placeholder="Please Enter Your E-mail"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Phone</label>
+                <span class="phone_error badge badge-danger"></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  aria-describedby="helpId"
+                  placeholder="Please Enter Your Phone"
+                />
+              </div>
+              <div class="form-group">
+                <label >city</label>
+                <span class="city_error badge badge-danger"></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="city"
+                  id="city"
+                  aria-describedby="helpId"
+                  placeholder="Please Enter Your city"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">password</label>
+                <span class="pass_error badge badge-danger"></span>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  id="password"
+                  aria-describedby="helpId"
+                  placeholder="Please Enter Your password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="file" id="upload">
+                  <ion-icon name="image-outline"></ion-icon>
+                </label>
+                <label id="open_Camera">
+                  <ion-icon name="camera-outline"></ion-icon>
+                </label>
+                <label id="take_image">
+                  <ion-icon name="aperture"></ion-icon>
+                </label>
+                <input
+                  type="file"
+                  hidden
+                  class="form-control"
+                  name="file"
+                  id="file"
+                />
+              </div>
+              <div class="form-group d-flex">
+                <img
+                  id="user_img"
+                  class="shadow-sm rounded"
+                  width="150"
+                  height="150"
+                  alt=""
+                />
+                <video width="150" height="100" autoplay id="video"></video>
+                <canvas id="canvas" hidden style="display: none;"></canvas>
+              </div>
+              <div class="form-group">
+                <div class="img_detail mt-3">
+                  <span id="file_name"></span>
+                  <span id="file_size"></span>
+                  <span id="file_type"></span>
+                  <span id="file_path"></span>
+                </div>
+              </div>
+              <button type="button" style="background-color: orange;" id="btn">
+                Save
+              </button>
+              <span class="success alert alert-success"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- <script src="../js/renderer.js"></script> -->
+    <script src="../js/index13.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

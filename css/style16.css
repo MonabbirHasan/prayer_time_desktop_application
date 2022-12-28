@@ -1,0 +1,63 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrpper {
+  padding: 10px;
+  width: 100%;
+}
+.content {
+  padding: 20px;
+  width: 100%;
+}
+.main_temp {
+  font-size: 70px;
+  color: orange;
+  font-weight: 900;
+  text-align: center;
+}
+.main {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px #bbb;
+  text-align: center;
+}
+.main h3 {
+  font-size: 40px;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.assets {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.assets p ion-icon{
+  margin: 0 5px;
+  font-size: 30px;
+}
+.assets p {
+  padding: 10px;
+  background-color: orange;
+  color: #000;
+  margin: 10px;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bolder;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+.flex_content {
+  justify-content: center;
+  align-items: center;
+}

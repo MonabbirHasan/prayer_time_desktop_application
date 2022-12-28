@@ -1,0 +1,196 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* background: #111; */
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.prayer-time-box {
+  /* padding: 10px 0; */
+  width: 100%;
+}
+.main-box {
+  display: inline;
+  justify-content: space-between;
+  grid-area: 10px;
+  gap: 20px;
+}
+.main_p {
+  width: 70vh;
+  height: 146px;
+  overflow: scroll;
+  text-align: right;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 23px;
+}
+.main_p::-webkit-scrollbar {
+  width: 0;
+}
+.main_p.full_width {
+  height: 100px;
+  width: 100%;
+  overflow: scroll;
+}
+.main-box .m-left {
+  background-color: #000;
+  background: url('../image/masjid_7.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  filter: drop-shadow(5px 5px 5px 5px black);
+  padding: 20px;
+  height: 500px;
+}
+.m-left h3 {
+  font-size: x-large;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #000;
+}
+.m-left h1 {
+  font-size: normal;
+  color: #000;
+  text-transform: uppercase;
+}
+.m-left h1 sub {
+  font-size: x-small;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: bold;
+}
+.m-left h2 {
+  color: #000;
+}
+.m-left p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.m-left span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.m-left span:last-child {
+  color: #111;
+}
+.main-box .m-right {
+  flex-basis: 30%;
+  background-color: #fff;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  padding: 10px;
+}
+.m-right h4 {
+  font-size: 17px;
+  text-transform: capitalize;
+  text-align: left;
+  color: black;
+  font-weight: 400;
+}
+.m-right input {
+  border: none;
+  padding: 5px;
+  text-transform: lowercase;
+  font-size: 14px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.time-box {
+  padding: 5px;
+  width: 100%;
+  isolation: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin-top: 30px;
+}
+.time-box .item {
+  padding: 10px;
+  background-color: orange;
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+}
+.item h2 {
+  padding: 5px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+}
+.item h1 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.item span {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  pad: 5px;
+}
+.item span:last-child {
+  color: black;
+  font-weight: bold;
+}
+.btn .btn-primary {
+  width: 100%;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+#search_btn {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: orange;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none !important;
+  width: 100%;
+  border-radius: 5px;
+}
+.control_btn {
+  padding: 5px;
+  color: #fff;
+  background-color: orange;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none !important;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.bg-image {
+  float: right;
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+.controlls {
+  position: relative;
+  top: 45px;
+  display: flex;
+}
+.controlls button {
+  margin: 0px 10px;
+  font-weight: bold;
+}
+.bg-image img {
+  width: 50px;
+  height: 45px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  filter: drop-shadow(3px 3px 5px 3px #333);
+}

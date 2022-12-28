@@ -1,0 +1,18 @@
+1.bukhari api
+2.muslim api
+3.tirmiji api
+4.abu daud api
+5.ibn majah api
+6.riyadus salihin api
+7.muslim ha
+8.arabic kuran api
+9.bangla kuran api
+10.full kuran api
+11.audio kuran api
+12.nasheed api
+13.weather api
+14.passions
+
+create:14-12-2022
+complete:22-12-2022
+I completed this application only 8-days

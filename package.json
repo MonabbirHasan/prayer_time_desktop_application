@@ -1,0 +1,38 @@
+{
+  "name": "prayer-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "build-installer":"electron-builder"
+  },
+ "build":{
+  "appId":"prayer-app",
+  "win":{
+    "target":["nsis"],
+    "icon":"./image/app_icon.ico",
+    "requestedExecutionLevel":"requireAdministrator"
+  },
+  "nsis":{
+    "installerIcon":"./image/app_icon.ico",
+    "uninstallerIcon":"./image/app_icon.ico",
+    "uninstallDisplayName":"Prayer For You",
+    "license":"license.txt",
+    "oneClick":false,
+    "allowToChangeInstallationDirectory":true
+  }
+ },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sqlite-electron": "^2.2.5"
+  }
+}

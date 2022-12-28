@@ -1,0 +1,194 @@
+/* body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        background-color: orange;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        user-zoom: none;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: orange;
+        border-radius: 10px;
+      }
+      .wrapper {
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+      }
+      .alerm-box {
+        width: 100%;
+        background: #fc9400;
+        justify-content: center;
+        margin: auto;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+      }
+      .alerm-box select {
+        padding: 5px;
+        border: none;
+        background: #fff;
+        outline: none;
+        border: 2px solid #eee;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      label {
+        padding: 5px;
+        background-color: white;
+        filter: drop-shadow(5px 5px 5px 5px #bbb);
+        border-radius: 10px;
+        border: 2px solid #eee;
+        font-size: 13px;
+        font-weight: bold;
+        position: relative;
+        bottom: 10px;
+      }
+      .alerm-box select > option {
+        padding: 5px;
+        border: none !important;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .alerm-box .currect-date-time-box {
+        padding: 40px 0;
+        width: 100%;
+      }
+      .currect-date-time-box #alart-img {
+        padding: 5px;
+        width: 150px;
+        filter: hue-rotate(96deg);
+        transform: rotate(20deg);
+      }
+      .currect-date-time-box .date-time {
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+      }
+      .date-time span {
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .date-time span sub {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .btn {
+        padding: 10px 30px;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        color: 000;
+        font-weight: 600;
+        font-size: 16px;
+        outline: none;
+        margin-top: 40px;
+        cursor: pointer;
+        background: #21f123;
+      } */
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body,
+.wrapper,
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  user-zoom: none;
+}
+body {
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #fc9400;
+}
+.wrapper {
+  width: 440px;
+  padding: 30px 30px 38px;
+  background: orange;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper img {
+  max-width: 103px;
+}
+.img_active {
+  animation: img 1s linear infinite;
+}
+@keyframes img {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(300deg);
+    transform: scale(1.2);
+  }
+}
+.wrapper h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.wrapper .content {
+  width: 100%;
+  justify-content: space-between;
+}
+.content.disable {
+  cursor: no-drop;
+}
+.content .column {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  width: calc(100% / 3 - 5px);
+}
+.content.disable .column {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select {
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+.wrapper button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: white;
+}

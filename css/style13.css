@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.wrapper {
+  padding: 10px 0;
+  width: 100%;
+}
+.content {
+  padding: 10px 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.form_box {
+  box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+#btn,
+#upload_edit_img {
+  padding: 5px 30px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: orange;
+}
+#upload,
+#open_Camera,
+#take_image {
+  padding: 5px 30px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: orange;
+}
+/* {
+    padding: 5px 30px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: orange;
+    margin-left: 5px;
+  } */
+input {
+  border: 1px solid orange;
+  text-transform: lowercase;
+}
+.img_detail {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+.img_detail span {
+  padding: 5px;
+  margin: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+/* #user_img {
+    filter: brightness(4) hue-rotate(300deg) blur(0.1px);
+  } */
+video {
+  filter: brightness(4) hue-rotate(300deg);
+  backdrop-filter: blur(80px);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}

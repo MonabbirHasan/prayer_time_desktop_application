@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PRAYER TIME</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        /* ::-webkit-scrollbar{
+          width: 5px;
+        }
+        ::-webkit-scrollbar-thumb{
+          background-color: orange;
+          border-radius: 10px;
+        } */
+        ::-webkit-scrollbar{
+          width: 0px;
+        }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body style="user-select: none; user-zoom: none;">
+    <div class="">
+      <div class="prayer-time-box">
+        <div class="main-box">
+          <div class="m-left" id="bg">
+            <div class="d-flex">
+              <img
+                id="user"
+                width="50px"
+                height="50px"
+                class="shadow-sm mr-3"
+                style="border: 3px solid #eee; border-radius: 50px;user-select: none; user-zoom: none;"
+                alt=""
+              />
+             <div class="d-flex mt-3">
+              <h3 class="page_title text-uppercase">
+              </h3>
+              <h3 class="ml-2 page_title title_name text-uppercase"></span>
+             </div>
+            </div>
+
+            <div class="pt-3 mb-3">
+              <h3 class="main_title"></h3>
+             <div class="d-flex">
+              <h1 class="main_h1"></h1>
+              <span style="font-size: 17px;font-weight: 800;margin-top: 10px;" class="session">am</span>
+             </div>
+              <span class="main_span1" style="font-size: 15px;text-transform:uppercase;"></span><br>
+              <span class="main_span2" style="font-size: 15px;text-transform:uppercase;"></span><br>
+              <span class="main_span3"></span>
+            </div>
+            <div class="surah">
+              <p class="main_p text-center"></p>
+              <div class="controlls">
+                <!-- <button
+                class="text-uppercase control_btn"
+                style="background: #fff; color: black !important;"
+                id="read_btn"
+              >
+                read
+              </button> -->
+              <button
+                class="text-uppercase control_btn"
+                style="background: #fff; color: black !important;"
+                id="play"
+              >
+              <ion-icon name="musical-notes-outline"></ion-icon>
+              </button>
+              <button
+                class="text-uppercase control_btn"
+                style="background: #fff; color: black !important;font-size: 20px;font-weight:800"
+                id="stop"
+              >
+              <ion-icon name="musical-note-outline"></ion-icon>
+              </button>
+              <button
+                style="background: #fff; color: black; display: none;font-size: 20px;font-weight:800"
+                class="text-uppercase control_btn ml-3"
+                id="mute"
+              >
+                <ion-icon name="volume-mute-outline"></ion-icon>
+              </button>
+              </div>
+              <div class="bg-image" style="user-select: none; user-zoom: none;">
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_1.jpg" onclick="bg_image('./image/masjid_1.jpg');" alt="masjid image" />
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_2.jpg" onclick="bg_image('./image/masjid_2.jpg');" alt="masjid image" />
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_7.png" onclick="bg_image('./image/masjid_7.png');" alt="masjid image" />
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_4.png" onclick="bg_image('./image/masjid_4.png');" alt="masjid image" />
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_8.png" onclick="bg_image('./image/masjid_8.png');" alt="masjid image" />
+                <img  style="user-select: none; user-zoom: none;" src="./image/masjid_6.png" onclick="bg_image('./image/masjid_6.png');" alt="masjid image" />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="m-right">
+            <h4>search your city name</h4>
+            <input type="text" id="city_name" name="city_name" placeholder="" />
+            <button type="submit" id="search_btn" class="mt-3">Search</button>
+          </div> -->
+        </div>
+        <!-- date time box -->
+        <h1 class="p-2 text-uppercase title">today prayer time</h1>
+        <div class="time-box today_box"></div>
+        <!-- tomorrow time box -->
+        <h1 class="p-2 text-uppercase title title2 mt-3">
+          tomorrow prayer time
+        </h1>
+        <div class="time-box tomorrow_box"></div>
+      </div>
+    </div>
+    <script src="./js/index1.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
